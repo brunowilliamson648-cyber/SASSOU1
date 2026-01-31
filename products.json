@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Bouquet de fleurs",
+      "price": 2500,
+      "category": "mariage",
+      "image": "https://images.unsplash.com/photo-1464207687429-7505649dae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      "description": "Magnifique bouquet de fleurs fraîches pour votre mariage"
+    },
+    {
+      "id": 2,
+      "name": "Robe de mariée",
+      "price": 15000,
+      "category": "mariage",
+      "image": "https://images.unsplash.com/photo-1519657337289-077653f724ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      "description": "Robe de mariée élégante et raffinée"
+    },
+    {
+      "id": 3,
+      "name": "Décoration de table",
+      "price": 3500,
+      "category": "decor",
+      "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      "description": "Set complet pour décoration de table d'événement"
+    },
+    {
+      "id": 4,
+      "name": "Chapeau d'été",
+      "price": 1200,
+      "category": "accessoires",
+      "image": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      "description": "Chapeau élégant pour vos événements en plein air"
+    },
+    {
+      "id": 5,
+      "name": "Valise vintage",
+      "price": 4500,
+      "category": "accessoires",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      "description": "Valise vintage parfaite pour la décoration ou l'utilisation"
+    },
+    {
+      "id": 6,
+      "name": "Robe de soirée",
+      "price": 8500,
+      "category": "mariage",
+      "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      "description": "Robe de soirée élégante pour vos événements spéciaux"
+    },
+    {
+      "id": 7,
+      "name": "Pétrouque",
+      "price": 3000,
+      "category": "mariage",
+      "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      "description": "Pétrouque traditionnel pour votre cérémonie de mariage"
+    },
+    {
+      "id": 8,
+      "name": "Chemise de cérémonie",
+      "price": 5000,
+      "category": "mariage",
+      "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      "description": "Chemise élégante pour le marié ou les invités"
+    },
+    {
+      "id": 9,
+      "name": "Robe pour enfant",
+      "price": 4000,
+      "category": "mariage",
+      "image": "https://images.unsplash.com/photo-1519238263530-99c1fc5c7b59?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      "description": "Robe élégante pour enfants pour les occasions spéciales"
+    }
+  ]
+}

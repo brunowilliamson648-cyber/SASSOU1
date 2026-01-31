@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sassou Décor - Accessoires de Mariage et Décoration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- En-tête et navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <h1 class="logo">Sassou Décor</h1>
+                <p class="tagline">Accessoires de Mariage & Décoration</p>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#produits" class="nav-link">Produits</a></li>
+                    <li><a href="#panier" class="nav-link">Panier <span id="cart-count">0</span></a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#admin" class="nav-link admin-link"><i class="fas fa-lock"></i> Admin</a></li>
+                </ul>
+                
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Héros -->
+    <section id="accueil" class="hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <h2 class="hero-title">Élégance et Raffinement pour vos Événements</h2>
+                <p class="hero-subtitle">Location et vente d'accessoires de mariage et de décor</p>
+                <a href="#produits" class="btn btn-primary">Découvrir nos produits</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Produits -->
+    <section id="produits" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Nos Produits</h2>
+            <p class="section-subtitle">Découvrez notre sélection d'accessoires de mariage et de décoration</p>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">Tous</button>
+                <button class="filter-btn" data-category="mariage">Mariage</button>
+                <button class="filter-btn" data-category="decor">Décoration</button>
+                <button class="filter-btn" data-category="accessoires">Accessoires</button>
+            </div>
+            
+            <div class="products-grid" id="products-container">
+                <!-- Les produits seront chargés dynamiquement ici -->
+                <div class="loading">Chargement des produits...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Panier -->
+    <section id="panier" class="cart-section">
+        <div class="container">
+            <h2 class="section-title">Votre Panier</h2>
+            
+            <div class="cart-container">
+                <div class="cart-items" id="cart-items">
+                    <div class="empty-cart-message">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Votre panier est vide</p>
+                        <a href="#produits" class="btn btn-outline">Continuer vos achats</a>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <h3>Résumé de la commande</h3>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Sous-total</span>
+                            <span id="subtotal">0 HTG</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Livraison</span>
+                            <span id="shipping">À calculer</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span id="total">0 HTG</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-checkout" id="checkout-btn" disabled>
+                        <i class="fas fa-shopping-bag"></i> Passer la commande
+                    </button>
+                    
+                    <div class="payment-info">
+                        <h4><i class="fas fa-money-bill-wave"></i> Paiement par MonCash</h4>
+                        <p>Envoyez le paiement au numéro : <strong>+509 3490 2252</strong></p>
+                        <p>Indiquez votre nom et le numéro de commande dans la description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact et Informations -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact & Informations</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3><i class="fas fa-store"></i> Notre Magasin</h3>
+                    <p class="address">
+                        <i class="fas fa-map-marker-alt"></i> 
+                        #11, Rue Rigaud, Pétion-Ville<br>
+                        Port-au-Prince, Haïti
+                    </p>
+                    
+                    <h3><i class="fas fa-phone"></i> Téléphones</h3>
+                    <p>+509 4337 3434</p>
+                    <p>+509 3490 2252</p>
+                    
+                    <h3><i class="fas fa-clock"></i> Heures d'ouverture</h3>
+                    <p>Lundi - Vendredi: 9h00 - 18h00</p>
+                    <p>Samedi: 9h00 - 16h00</p>
+                    <p>Dimanche: Fermé</p>
+                </div>
+                
+                <div class="whatsapp-buttons">
+                    <h3><i class="fab fa-whatsapp"></i> Contact WhatsApp</h3>
+                    
+                    <a href="https://wa.me/50943373434?text=Bonjour%20Sassou%20Décor,%20je%20souhaite%20passer%20une%20commande" 
+                       class="whatsapp-btn order-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <strong>Commander via WhatsApp</strong>
+                            <span>+509 4337 3434</span>
+                        </div>
+                    </a>
+                    
+                    <a href="https://wa.me/50934902252?text=Bonjour%20Sassou%20Décor,%20j'ai%20une%20question%20sur%20vos%20produits" 
+                       class="whatsapp-btn service-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <strong>Service Client WhatsApp</strong>
+                            <span>+509 3490 2252</span>
+                        </div>
+                    </a>
+                    
+                    <!-- Espace pour bouton supplémentaire -->
+                    <div id="extra-button-space" class="extra-button-space">
+                        <!-- Bouton supplémentaire pourra être ajouté ici ultérieurement -->
+                    </div>
+                    
+                    <div class="payment-method">
+                        <h4><i class="fas fa-mobile-alt"></i> Paiement par MonCash</h4>
+                        <div class="moncash-info">
+                            <i class="fas fa-qrcode"></i>
+                            <div>
+                                <p>Envoyez votre paiement à:</p>
+                                <p class="moncash-number">+509 3490 2252</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Administration (protégée par mot de passe) -->
+    <section id="admin" class="admin-section">
+        <div class="container">
+            <h2 class="section-title">Espace Administration</h2>
+            
+            <div class="admin-login" id="admin-login">
+                <h3>Connexion Admin</h3>
+                <p>Veuillez entrer le mot de passe pour accéder à l'administration</p>
+                <div class="password-input">
+                    <input type="password" id="admin-password" placeholder="Mot de passe administrateur">
+                    <button id="login-btn" class="btn btn-primary">Se connecter</button>
+                </div>
+                <p class="hint">(Mot de passe par défaut: admin123 - Changez-le dans le code après la première connexion)</p>
+            </div>
+            
+            <div class="admin-panel" id="admin-panel" style="display: none;">
+                <div class="admin-header">
+                    <h3><i class="fas fa-cogs"></i> Gestion des Produits</h3>
+                    <button id="logout-btn" class="btn btn-outline">Déconnexion</button>
+                </div>
+                
+                <div class="admin-actions">
+                    <button id="add-product-btn" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Ajouter un produit
+                    </button>
+                    <button id="export-products-btn" class="btn btn-outline">
+                        <i class="fas fa-download"></i> Exporter les produits
+                    </button>
+                    <button id="import-products-btn" class="btn btn-outline">
+                        <i class="fas fa-upload"></i> Importer des produits
+                    </button>
+                </div>
+                
+                <div class="product-form" id="product-form" style="display: none;">
+                    <h4 id="form-title">Ajouter un nouveau produit</h4>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="product-name">Nom du produit</label>
+                            <input type="text" id="product-name" placeholder="Ex: Bouquet de fleurs">
+                        </div>
+                        <div class="form-group">
+                            <label for="product-price">Prix (HTG)</label>
+                            <input type="number" id="product-price" placeholder="Ex: 2500">
+                        </div>
+                        <div class="form-group">
+                            <label for="product-category">Catégorie</label>
+                            <select id="product-category">
+                                <option value="mariage">Mariage</option>
+                                <option value="decor">Décoration</option>
+                                <option value="accessoires">Accessoires</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-image">Image (URL)</label>
+                            <input type="text" id="product-image" placeholder="https://exemple.com/image.jpg">
+                            <small>Ou utilisez un fichier local :</small>
+                            <input type="file" id="image-upload" accept="image/*">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="product-description">Description</label>
+                            <textarea id="product-description" rows="3" placeholder="Description du produit..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button id="save-product-btn" class="btn btn-primary">Enregistrer le produit</button>
+                        <button id="cancel-product-btn" class="btn btn-outline">Annuler</button>
+                    </div>
+                    <input type="hidden" id="product-id">
+                </div>
+                
+                <div class="products-list-admin" id="products-list-admin">
+                    <!-- Les produits seront affichés ici pour l'administration -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Sassou Décor</h3>
+                    <p>Vente et location d'accessoires de mariage et de décor</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#produits">Produits</a></li>
+                        <li><a href="#panier">Panier</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Coordonnées</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> #11, Rue Rigaud, Pétion-Ville, Haïti</p>
+                    <p><i class="fas fa-phone"></i> +509 4337 3434 / +509 3490 2252</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2023</span> Sassou Décor. Tous droits réservés.</p>
+                <p>Site créé avec ❤️ pour votre entreprise</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Panier flottant pour mobile -->
+    <div class="floating-cart" id="floating-cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="floating-cart-count">0</span>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal" id="image-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modal-image" src="" alt="Agrandissement">
+        </div>
+    </div>
+
+    <div class="modal" id="order-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Confirmation de commande</h3>
+            <div id="order-summary"></div>
+            <div class="modal-actions">
+                <button id="confirm-order-btn" class="btn btn-primary">Confirmer la commande</button>
+                <button id="cancel-order-btn" class="btn btn-outline">Annuler</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
